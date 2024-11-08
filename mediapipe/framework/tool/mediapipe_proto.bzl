@@ -8,6 +8,14 @@ load("@com_google_protobuf//:protobuf.bzl", "cc_proto_library", "py_proto_librar
 load("@rules_proto//proto:defs.bzl", _proto_library = "proto_library")
 #load("@rules_proto_grpc//js:defs.bzl", "js_proto_library")
 
+def _js_proto_library(ctx):
+    pass
+
+js_proto_library = rule(
+    implementation = _js_proto_library,
+    attrs = {},
+)
+
 java_proto_library = native.java_proto_library
 java_lite_proto_library = native.java_lite_proto_library
 
