@@ -6,7 +6,7 @@ load("//mediapipe/framework/tool:mediapipe_graph.bzl", "mediapipe_options_librar
 load("//mediapipe/framework/tool:mediapipe_proto_allowlist.bzl", "rewrite_target_list")
 load("@com_google_protobuf//:protobuf.bzl", "cc_proto_library", "py_proto_library")
 load("@rules_proto//proto:defs.bzl", _proto_library = "proto_library")
-load("@rules_proto_grpc//js:defs.bzl", "js_proto_library")
+#load("@rules_proto_grpc//js:defs.bzl", "js_proto_library")
 
 java_proto_library = native.java_proto_library
 java_lite_proto_library = native.java_lite_proto_library
